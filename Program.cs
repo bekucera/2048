@@ -11,13 +11,12 @@ namespace Game_2048
     {
         static void Main(string[] args)
         {
-            _2048 game = new _2048(10);
+            Game2048 game = new Game2048(20);
             game.PlaceNew();
             game.PlaceNew();
             
-
             game.Display();
-            
+
             while (true)
             {
                 var key = Console.ReadKey().Key;
@@ -50,12 +49,12 @@ namespace Game_2048
                 Console.Clear();
                 game.Display();
 
-                if(false&&game.MaxNum() == 2048)
+                if (false && game.MaxNum() == 2048)
                 {
                     Console.WriteLine("Vyhral jsi");
                     break;
                 }
-                if(game.MinNum() != 0)
+                if (game.MinNum() != 0)
                 {
                     Console.WriteLine("Prohral jsi");
                     break;
@@ -68,16 +67,16 @@ namespace Game_2048
     }
 
 
-    class _2048
+    class Game2048
     {
-        int[,] pole = new int[4,4];
+        int[,] pole = new int[4, 4];
 
-        public _2048(int len)
+        public Game2048(int len)
         {
             pole = new int[len, len];
             init();
         }
-        public _2048() => init();
+        public Game2048() => init();
 
         private void init()
         {
@@ -105,7 +104,7 @@ namespace Game_2048
                 {
                     int number = pole[x, y];
                     Console.ForegroundColor = getColorFromInt(number);
-                    Console.Write(number.ToString().PadRight(maxLen)+" ");
+                    Console.Write(number.ToString().PadRight(maxLen) + " ");
                 }
                 Console.WriteLine();
             }
@@ -117,13 +116,13 @@ namespace Game_2048
                 return ConsoleColor.White;
 
             int i = 0;
-            while(cislo != 2)
+            while (cislo != 2)
             {
                 cislo /= 2;
                 i++;
             }
             i++;
-            return (ConsoleColor)i;
+            return (ConsoleColor)(i%15);
         }
 
         public int MinNum()
@@ -133,9 +132,9 @@ namespace Game_2048
             {
                 for (int y = 0; y < pole.GetLength(1); y++)
                 {
-                    if (minNum > pole[x,y])
+                    if (minNum > pole[x, y])
                     {
-                        minNum = pole[x,y];
+                        minNum = pole[x, y];
                     }
                 }
             }
@@ -187,13 +186,13 @@ namespace Game_2048
                             }
                             else
                             {
-                                if (pole[ix + x,iy+y] == pole[ix,iy])
+                                if (pole[ix + x, iy + y] == pole[ix, iy])
                                 {
-                                    pole[ix+x, iy+y] *= 2;
+                                    pole[ix + x, iy + y] *= 2;
                                     pole[ix, iy] = 0;
                                 }
                             }
-                            
+
                         }
                     }
                 }
@@ -204,10 +203,10 @@ namespace Game_2048
         }
 
 
-        public void Left() => move(-1,0);
-        public void Right() => move(+1,0);
-        public void Up() => move(0,-1);
-        public void Down() => move(0,+1);
-        
+        public void Left() => move(-1, 0);
+        public void Right() => move(+1, 0);
+        public void Up() => move(0, -1);
+        public void Down() => move(0, +1);
+
     }
 }
