@@ -1,0 +1,15 @@
+/Users/bekucera/Documents/programing/cs/2048/bin/Debug/net8.0/2048
+/Users/bekucera/Documents/programing/cs/2048/bin/Debug/net8.0/2048.deps.json
+/Users/bekucera/Documents/programing/cs/2048/bin/Debug/net8.0/2048.runtimeconfig.json
+/Users/bekucera/Documents/programing/cs/2048/bin/Debug/net8.0/2048.dll
+/Users/bekucera/Documents/programing/cs/2048/bin/Debug/net8.0/2048.pdb
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.AssemblyInfoInputs.cache
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.AssemblyInfo.cs
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.csproj.CoreCompileInputs.cache
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.sourcelink.json
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.dll
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/refint/2048.dll
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.pdb
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/2048.genruntimeconfig.cache
+/Users/bekucera/Documents/programing/cs/2048/obj/Debug/net8.0/ref/2048.dll
