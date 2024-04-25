@@ -14,7 +14,7 @@ namespace Game_2048
             Game2048 game = new Game2048(20);
             game.PlaceNew();
             game.PlaceNew();
-            
+
             game.Display();
 
             while (true)
@@ -25,27 +25,28 @@ namespace Game_2048
                 {
                     case ConsoleKey.LeftArrow:
                         game.Left();
-                        game.PlaceNew();
+
                         break;
 
 
                     case ConsoleKey.RightArrow:
                         game.Right();
-                        game.PlaceNew();
+
                         break;
 
 
                     case ConsoleKey.UpArrow:
                         game.Up();
-                        game.PlaceNew();
+
                         break;
 
 
                     case ConsoleKey.DownArrow:
                         game.Down();
-                        game.PlaceNew();
+                        
                         break;
                 }
+                game.PlaceNew();
                 Console.Clear();
                 game.Display();
 
