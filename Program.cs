@@ -11,7 +11,7 @@ namespace Game_2048
     {
         static void Main(string[] args)
         {
-            Game2048 game = new Game2048(20);
+            Game2048 game = new Game2048(5);
             game.PlaceNew();
             game.PlaceNew();
 
