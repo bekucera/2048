@@ -25,25 +25,21 @@ namespace Game_2048
                 {
                     case ConsoleKey.LeftArrow:
                         game.Left();
-
                         break;
 
 
                     case ConsoleKey.RightArrow:
                         game.Right();
-
                         break;
 
 
                     case ConsoleKey.UpArrow:
                         game.Up();
-
                         break;
 
 
                     case ConsoleKey.DownArrow:
                         game.Down();
-                        
                         break;
                 }
                 game.PlaceNew();
